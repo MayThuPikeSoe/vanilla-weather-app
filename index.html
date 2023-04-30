@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="box">
+          <div class="row heading-bar">
+            <div class="col-6">
+              <div class="heading d-flex">
+                <div class="logo"><img src="./image/may.png" alt="" /></div>
+                <h1>May</h1>
+              </div>
+            </div>
+            <div class="col-6">
+              <img
+                src="./image/logo.png"
+                alt=""
+                style="
+                  width: 100px;
+                  height: 50px;
+                  margin-left: 150px;
+                  margin-top: 20px;
+                "
+              />
+            </div>
+          </div>
+
+          <div class="input-section">
+            <form class="d-flex mx-4" id="search-form">
+              <input
+                type="text"
+                class="form-control w-75 mx-2"
+                id="city-input"
+                autocomplete="off"
+                placeholder="enter a city"
+              />
+
+              <input
+                type="submit"
+                class="form-control w-25 mx-2 btn btn-search"
+                value="Search"
+              />
+            </form>
+          </div>
+          <div class="weather-info">
+            <div class="row">
+              <div class="col-6">
+                <h1 id="city-name"></h1>
+                <ul class="show-date-cloud">
+                  <li>
+                    <span id="date"></span>,
+                    <span id="description"></span>
+                  </li>
+
+                  <li>
+                    humidity:
+                    <strong id="humidity" style="color: red"></strong
+                    ><span style="color: red">%</span> wind:
+                    <strong id="wind" style="color: red"></strong>
+                    <span style="color: red">km/h</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 show-degree">
+                <img
+                  src="http://openweathermap.org/img/wn/02d@2x.png"
+                  class="image"
+                  id="icon"
+                  alt=""
+                />
+                <strong id="temperature"></strong><span class="degree">°C</span>
+              </div>
+            </div>
+          </div>
+          <div class="weather-forecast" id="weather-forecast"></div>
+          <footer>
+            <p>
+              This project was coded by
+              <a
+                href="https://www.shecodes.io/graduates/74625-may-thu-win"
+                id="coder-name"
+                >May Thu</a
+              >
+              and is
+              <a
+                href="https://github.com/MayThuPikeSoe"
+                style="color: aquamarine"
+                >open-sourced on GitHub
+              </a>
+              and <a href="" style="color: aquamarine">hosted on Netlify</a>
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
