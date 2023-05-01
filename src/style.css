@@ -1,6 +1,6 @@
 .main {
   width: 700px;
-  height: 500px;
+  height: 550px;
   margin: 30px auto;
   background: url(../image/inlelake.jpg) no-repeat;
   background-size: cover;
@@ -10,15 +10,17 @@
 }
 .box {
   width: 700px;
-  height: 500px;
+  height: 550px;
   border-radius: 20px;
-  background: rgba(255, 250, 250, 0.5);
+  padding-top: 20px;
+  background: rgba(255, 250, 250, 0.4);
 }
 .heading-bar {
-  padding-top: 20px;
+  padding: 0;
+  margin: 0;
 }
 .heading {
-  padding: 20px;
+  padding: 20px 0px;
   margin: 0 10px;
 }
 .heading h1 {
@@ -38,7 +40,7 @@
 .btn-search {
   position: relative;
 
-  border: 1px solid rgb(182, 86, 182);
+  border: 2px solid rgb(182, 86, 182);
   color: rgb(12, 49, 50);
   border-radius: 50px;
   height: 45px;
@@ -49,7 +51,7 @@
     0 5px 50px 0 #f415ed inset, 0 5px 50px 0 #f415ed;
 }
 .weather-info {
-  margin: 30px;
+  margin: 35px;
 }
 #city-name {
   color: red;
@@ -63,7 +65,7 @@
   padding: 0;
 }
 .show-degree {
-  padding-left: 80px;
+  padding-left: 135px;
 }
 .image {
   width: 60px;
@@ -83,8 +85,8 @@
   font-family: "Roboto", sans-serif;
 }
 .weather-forecast {
-  margin: 30px;
-  padding: 0;
+  margin: 35px;
+  padding-left: 15px;
 }
 .day {
   color: #0b0bbf;
@@ -104,5 +106,5 @@
   font-family: "Roboto", sans-serif;
 }
 footer {
-  margin: 40px 30px 30px 30px;
+  margin: 45px 30px 20px 30px;
 }
